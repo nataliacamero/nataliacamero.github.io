@@ -315,6 +315,19 @@ body {
                 @include hover;
                 padding-left: 35px;
             }
+    
+    .footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        text-align: center;
+    }   
+        .div.redes {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-items: space-between;
+            margin: 0px 0px 40px 0px;
+        }
 
         
 
