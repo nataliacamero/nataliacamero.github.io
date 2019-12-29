@@ -281,7 +281,9 @@ h3 {
   display: flex;
   flex-flow: column nowrap;
   clip-path: polygon(0 6%, 100% 0, 99% 100%, 0% 100%);
-  height: 341px; }
+  height: 341px;
+  justify-content: center;
+  align-items: center; }
 
 .pnovedades {
   font-family: 'IBM Plex Sans';
@@ -291,5 +293,26 @@ h3 {
   letter-spacing: 0;
   line-height: 42px;
   color: #ffffff; }
+
+.divbotonovedades {
+  background: #00F3BB;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', Medium;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  height: 48px;
+  width: 288px;
+  text-align: center;
+  margin-top: 16px; }
+
+.divbotonovedades:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  font-family: 'IBM Plex Mono', Medium;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 42px; }
 
 /*# sourceMappingURL=estilo.css.map */
