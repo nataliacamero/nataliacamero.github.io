@@ -325,6 +325,6 @@ h3 {
 
 .div.redes {
   display: flex;
-  flex-flow: row wrap; }
+  flex-direction: row; }
 
 /*# sourceMappingURL=estilo.css.map */

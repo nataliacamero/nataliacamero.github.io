@@ -323,10 +323,8 @@ body {
         text-align: center;
         padding: 10px 16px 32px 16px;
     }   
-        .p-footer {
-            
-        }
+        
         .div.redes {
             display: flex;
-            flex-flow: row wrap;
+            flex-direction: row;
         }
