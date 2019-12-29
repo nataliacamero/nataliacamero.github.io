@@ -44,12 +44,12 @@ body {
 
 
 @mixin boton {
+    display: inline-flex;
     font-family: 'IBM Plex Mono', Medium;
     font-size: 16px;
     color: #060A24;
     letter-spacing: 0;
-    text-align: center;
-    line-height: 22px;
+    line-height: 48px;
     background: #00F3BB;
     height: 48px;
     width: 288px;
@@ -160,9 +160,11 @@ body {
 
                 .botonconocemas {
                     @include boton;
+                    padding-left: 87px;
                 }
                     .botonconocemas:hover {
                         @include hover;
+                        padding-left: 80px;
                     }
 
     .section-episodios {
@@ -291,6 +293,7 @@ body {
         flex-flow: column;
         text-align: center;
         align-items: center;
+        margin-top: 64px;
     }
         .div-novedades {
             @include polygono;
@@ -306,9 +309,11 @@ body {
 
         .botonNovedades {
             @include boton;
+            padding-left: 44px;
         }   
             .botonNovedades:hover {
                 @include hover;
+                padding-left: 35px;
             }
 
         

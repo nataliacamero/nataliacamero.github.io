@@ -83,23 +83,25 @@ h1 {
   width: 288px; }
 
 .botonconocemas {
+  display: inline-flex;
   font-family: 'IBM Plex Mono', Medium;
   font-size: 16px;
   color: #060A24;
   letter-spacing: 0;
-  text-align: center;
-  line-height: 22px;
+  line-height: 48px;
   background: #00F3BB;
   height: 48px;
   width: 288px;
   text-decoration: none;
   transition-duration: 0.4s;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-left: 87px; }
 
 .botonconocemas:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #ffffff;
-  font-size: 18px; }
+  font-size: 18px;
+  padding-left: 80px; }
 
 .section-episodios {
   margin-top: 48px;
@@ -271,7 +273,8 @@ h3 {
   display: flex;
   flex-flow: column;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 64px; }
 
 .div-novedades {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -293,22 +296,24 @@ h3 {
   color: #ffffff; }
 
 .botonNovedades {
+  display: inline-flex;
   font-family: 'IBM Plex Mono', Medium;
   font-size: 16px;
   color: #060A24;
   letter-spacing: 0;
-  text-align: center;
-  line-height: 22px;
+  line-height: 48px;
   background: #00F3BB;
   height: 48px;
   width: 288px;
   text-decoration: none;
   transition-duration: 0.4s;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-left: 44px; }
 
 .botonNovedades:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #ffffff;
-  font-size: 18px; }
+  font-size: 18px;
+  padding-left: 35px; }
 
 /*# sourceMappingURL=estilo.css.map */
