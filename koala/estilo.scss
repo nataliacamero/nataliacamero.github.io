@@ -90,6 +90,7 @@ body {
     }
         .menu {
             display: flex;
+            position: sticky;
             flex-flow: row nowrap;
             height: 2%;
             margin: 0px;
