@@ -322,10 +322,12 @@ h3 {
   align-content: center;
   text-align: center; }
 
+.p-footer {
+  margin-top: 32px; }
+
 .div.redes {
   display: flex;
-  flex-flow: row nowrap;
-  justify-items: space-between;
-  margin: 0px 0px 40px 0px; }
+  flex-flow: row wrap;
+  padding: 16px 0px 32px 0px; }
 
 /*# sourceMappingURL=estilo.css.map */
