@@ -15,20 +15,17 @@ body {
 .header {
   display: flex;
   flex-flow: column nowrap;
-  margin-left: 16px;
   padding: 0px; }
 
 .menu {
   display: flex;
-  position: sticky;
   flex-flow: row nowrap;
   height: 2%;
-  margin: 0px;
   padding: 0px; }
 
 .logo {
   flex: 1 1 auto;
-  margin: 2px;
+  margin-left: 16px;
   padding: 2px; }
 
 .imglogo {
@@ -49,7 +46,8 @@ body {
 
 .article {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  margin-left: 16px; }
 
 .titulo {
   display: flex;
@@ -96,7 +94,8 @@ h1 {
   text-decoration: none;
   transition-duration: 0.4s;
   cursor: pointer;
-  padding-left: 87px; }
+  padding-left: 87px;
+  margin-top: 22px; }
 
 .botonconocemas:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);

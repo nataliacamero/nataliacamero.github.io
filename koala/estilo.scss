@@ -85,20 +85,19 @@ body {
     .header {
         display: flex;
         flex-flow: column nowrap;
-        margin-left: 16px;
+        
         padding: 0px;
     }
         .menu {
             display: flex;
-            position: sticky;
             flex-flow: row nowrap;
+            
             height: 2%;
-            margin: 0px;
             padding: 0px;
         }
             .logo {
                 flex: 1 1 auto;
-                margin: 2px;
+                margin-left: 16px;
                 padding: 2px;
                 }
 
@@ -124,6 +123,7 @@ body {
         .article {
             display: flex;
             flex-flow: column nowrap;
+            margin-left: 16px;
         }
 
             .titulo {
@@ -161,6 +161,7 @@ body {
                 .botonconocemas {
                     @include boton;
                     padding-left: 87px;
+                    margin-top: 22px;
                 }
                     .botonconocemas:hover {
                         @include hover;
