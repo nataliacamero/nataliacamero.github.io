@@ -38,15 +38,11 @@ body {
   height: 24px; }
 
 .nav {
-  flex: 5 1 auto;
-  display: none;
   display: flex;
   justify-content: space-around;
   position: absolute;
-  top: 50px;
-  left: 15px;
+  top: 43px;
   padding-top: 15px;
-  padding-left: 1em;
   box-sizing: border-box;
   flex-direction: column;
   background-color: #0000EC;
