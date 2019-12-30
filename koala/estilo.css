@@ -9,6 +9,7 @@ body {
   margin: 0px; }
 
 /* Set de topicos*/
+/*-- Inicio--*/
 .padre {
   display: flex;
   flex-flow: column nowrap;
@@ -43,7 +44,8 @@ body {
 .nav {
   display: flex;
   position: absolute;
-  top: 43px; }
+  top: 43px;
+  visibility: hidden; }
 
 .div-nav {
   display: flex;
@@ -66,6 +68,14 @@ body {
   text-align: end;
   margin-right: 26px;
   width: 18px; }
+
+.checkbox {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2; }
+
+.checkbox:checked > .nav {
+  visibility: visible; }
 
 .icono-hamburg {
   position: absolute; }
