@@ -141,26 +141,93 @@ body {
                         text-decoration: none;
                         font-size: 16px;}
             
+            /*Menu Hamburguesa*/
+
             .hamburguesa {
-                flex: 1 1 auto;
-                text-align: end;
-                margin-right: 26px;
-                width: 18px;
+                display: flex;
+                flex-direction: row;
             }
+                /** Es el lugar del icono hamburguesa en la barra de navegacion.*/
 
-            .checkbox {
-                position: absolute;
-                visibility: hidden;
-                z-index: 2;
-            }
-                .checkbox:checked > .nav {
-                    visibility: visible;
-                }
-
-
-                .icono-hamburg {
+                .nav-menu_hamburguesa {
                     position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    width: 100%;
+                    height: 44px;
+                    color: #060A24;
+                    overflow: hidden;
+                    cursor: pointer;
                 }
+                    .nav-menu_hamburguesa:after {
+                        content: "☰";
+                        font-size: 1em;
+                        font-weight: 800;
+                        width: 100%;
+                        line-height: 0.5;
+                        text-align: right;
+                        position: relative;
+                        padding: 16px;
+                        float: right;
+                    }
+                  
+                    .checkbox_label {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 3;
+                        width: 100%;
+                        height: 44px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        margin: 0;
+                    }
+                  
+                    .checkbox__hack {
+                        display: none;
+                    }
+                  
+                    .checkbox__hack:checked ~ .nav-menu_hamburguesa {
+                        overflow: visible;
+                    }
+
+                    .checkbox__hack:checked ~ .nav-menu_hamburguesa::after {
+                        content: "X";
+                        font-size: 0.9em;
+                    }
+
+                    .nav-vinculos {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: absolute;
+                        top: 44px;
+                        height: 224px;
+                        background-color: #0000EC;
+                        padding-bottom: 5px;
+                        width: 100vw;
+                        z-index: 4;
+                    }
+
+                    .a-vinculos {
+                        display: inline-flex;
+                        text-decoration: none;
+                        font-size: 16px;
+                        padding-left: 16px;
+                        line-height: 70px;
+                        color: #ffffff;
+                        width:100%;
+                        height: 50px;
+                        z-index: 5;
+                      }
+                      
+                      .a-vinculos:hover{
+                        background-color: rgb(0, 243, 186);
+                        color: #060A24;
+                        cursor: pointer;
+                      }
+  
 
         .article {
             display: flex;
@@ -241,13 +308,12 @@ body {
             .spotify {
                 display: flex;
                 flex-flow: column;
-                align-items: space-aroind;
                 margin: 0px 11px 0px 11px;
             }
                 .iframe {
                     display: flex;
                     width: 100%;
-                    height: 200px;
+                    height: 236px;
                     /*flex: 1 1 40%;
                     width: 298px;*/
                 }
@@ -260,7 +326,7 @@ body {
         .phonenosotros {
             width: 100%;
             position: absolute;
-            top: 1405px;
+            top: 1439px;
             
         }
         .artnosotros {

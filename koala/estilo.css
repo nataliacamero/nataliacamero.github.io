@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: 'IBM Plex Sans', 'IBM Plex Mono', monospace, sans-serif; }
@@ -8,7 +9,7 @@ html {
 body {
   margin: 0px; }
 
-
+/* Set de topicos*/
 /*-- Inicio--*/
 .padre {
   display: flex;
@@ -35,16 +36,11 @@ body {
 .logo {
   flex: 1 1 auto;
   margin-left: 16px;
-  max-width: 24px;
-  padding: 2px; 
-  z-index: 7;
-}
+  padding: 2px; }
 
 .imglogo {
   width: 24px;
-  height: 24px;
-  z-index: 8;
- }
+  height: 24px; }
 
 .nav {
   display: flex;
@@ -52,15 +48,28 @@ body {
   top: 43px;
   visibility: hidden; }
 
-/*Menu Hamburguesa*/
+.div-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #0000EC;
+  padding-bottom: 5px;
+  width: 320px;
+  height: 224px; }
 
+.a-nav {
+  display: flex;
+  padding-left: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px; }
+
+/*Menu Hamburguesa*/
 .hamburguesa {
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
- /** Es el lugar del icono hamburguesa en la barra de navegacion.*/
-
+/** Es el lugar del icono hamburguesa en la barra de navegacion.*/
 .nav-menu_hamburguesa {
   position: absolute;
   top: 0;
@@ -70,8 +79,7 @@ body {
   height: 44px;
   color: #060A24;
   overflow: hidden;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .nav-menu_hamburguesa:after {
   content: "☰";
@@ -82,8 +90,7 @@ body {
   text-align: right;
   position: relative;
   padding: 16px;
-  float: right;
-}
+  float: right; }
 
 .checkbox_label {
   position: absolute;
@@ -94,19 +101,17 @@ body {
   height: 44px;
   overflow: hidden;
   cursor: pointer;
-  margin: 0;
-}
+  margin: 0; }
 
 .checkbox__hack {
-  display: none;
-}
+  display: none; }
 
 .checkbox__hack:checked ~ .nav-menu_hamburguesa {
-  overflow: visible;
-}
+  overflow: visible; }
+
 .checkbox__hack:checked ~ .nav-menu_hamburguesa::after {
   content: "X";
-}
+  font-size: 0.9em; }
 
 .nav-vinculos {
   display: flex;
@@ -118,8 +123,7 @@ body {
   background-color: #0000EC;
   padding-bottom: 5px;
   width: 100vw;
-  z-index: 4;
-}
+  z-index: 4; }
 
 .a-vinculos {
   display: inline-flex;
@@ -128,19 +132,14 @@ body {
   padding-left: 16px;
   line-height: 70px;
   color: #ffffff;
-  width:100%;
+  width: 100%;
   height: 50px;
-  z-index: 5;
-}
+  z-index: 5; }
 
-.a-vinculos:hover{
-  background-color: rgb(0, 243, 186);
+.a-vinculos:hover {
+  background-color: #00f3ba;
   color: #060A24;
-  cursor: pointer;
-}
-
-/*Fin barra de navegación.*/
-
+  cursor: pointer; }
 
 .article {
   display: flex;
@@ -202,8 +201,8 @@ h1 {
 .botonconocemas:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #ffffff;
-  font-size: 16px;
-   }
+  font-size: 18px;
+  padding-left: 80px; }
 
 .section-episodios {
   margin-top: 48px;
@@ -238,13 +237,12 @@ h1 {
 .spotify {
   display: flex;
   flex-flow: column;
-  align-items: space-aroind;
   margin: 0px 11px 0px 11px; }
 
 .iframe {
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 236px;
   /*flex: 1 1 40%;
   width: 298px;*/ }
 
@@ -256,7 +254,7 @@ h1 {
 .phonenosotros {
   width: 100%;
   position: absolute;
-  top: 1405px; }
+  top: 1439px; }
 
 .artnosotros {
   margin-top: 16px; }
@@ -415,8 +413,8 @@ h3 {
 .botonNovedades:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #ffffff;
-  
- }
+  font-size: 18px;
+  padding-left: 35px; }
 
 .footer {
   display: flex;
