@@ -36,39 +36,47 @@ body {
 .logo {
   flex: 1 1 auto;
   margin-left: 16px;
-  padding: 2px; }
+  padding: 2px;
+  z-index: 7;
+  max-width: 44px;
+  max-height: 44px; }
 
 .imglogo {
   width: 24px;
+  height: 24px;
+  z-index: 8; }
+
+.srclogo {
+  width: 24px;
   height: 24px; }
 
+@media screen and (min-width: 600px) {
+  .srclogo {
+    width: 36px;
+    height: 36px; } }
 .nav {
   display: flex;
   position: absolute;
   top: 43px;
   visibility: hidden; }
 
+@media screen and (min-width: 600px) {
+  .nav {
+    visibility: visible; } }
 .div-nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  background-color: #0000EC;
-  padding-bottom: 5px;
-  width: 320px;
-  height: 224px; }
-
-.a-nav {
-  display: flex;
-  padding-left: 16px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px; }
+  justify-content: space-evenly; }
 
 /*Menu Hamburguesa*/
 .hamburguesa {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  visibility: visible; }
 
+@media screen and (min-width: 600px) {
+  .hamburguesa {
+    visibility: hidden; } }
 /** Es el lugar del icono hamburguesa en la barra de navegacion.*/
 .nav-menu_hamburguesa {
   position: absolute;
@@ -114,6 +122,7 @@ body {
   content: "X";
   font-size: 0.9em; }
 
+/* -----------------*/
 .nav-vinculos {
   display: flex;
   flex-direction: column;
@@ -124,6 +133,7 @@ body {
   background-color: #0000EC;
   padding-bottom: 5px;
   width: 100vw;
+  overflow: visible;
   z-index: 4; }
 
 .a-vinculos {
@@ -142,6 +152,7 @@ body {
   color: #060A24;
   cursor: pointer; }
 
+/*Fin barra de navegacion*/
 .article {
   display: flex;
   flex-flow: column nowrap;
@@ -162,6 +173,9 @@ h1 {
   margin: 0px;
   height: 48px; }
 
+@media screen and (min-width: 431px) {
+  .spanazul {
+    color: #0000EC; } }
 .world {
   flex-flow: wrap;
   text-decoration: line-through;
@@ -170,7 +184,7 @@ h1 {
 
 .parrafo {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   width: 288px; }
 
 .parrafop {
@@ -180,8 +194,28 @@ h1 {
   color: #060A24;
   letter-spacing: 0;
   line-height: 22px;
+  width: 288px;
   width: 288px; }
 
+.parrafo-add {
+  flex-flow: wrap;
+  font-family: 'IBM Plex Mono';
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  width: 288px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 288px;
+  display: none; }
+
+@media screen and (min-width: 628px) {
+  .parrafop {
+    display: none; }
+
+  .parrafo-add {
+    display: inline; } }
 .botonconocemas {
   display: inline-flex;
   font-family: 'IBM Plex Mono', Medium;
