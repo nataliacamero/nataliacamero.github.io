@@ -103,13 +103,14 @@ body {
   cursor: pointer;
   margin: 0; }
 
-.checkbox__hack {
+/* Esto hace funcionar la barra de navegacion*/
+.checkbox {
   display: none; }
 
-.checkbox__hack:checked ~ .nav-menu_hamburguesa {
+.checkbox:checked ~ .nav-menu_hamburguesa {
   overflow: visible; }
 
-.checkbox__hack:checked ~ .nav-menu_hamburguesa::after {
+.checkbox:checked ~ .nav-menu_hamburguesa::after {
   content: "X";
   font-size: 0.9em; }
 
