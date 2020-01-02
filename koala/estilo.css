@@ -50,7 +50,19 @@ body {
   width: 24px;
   height: 24px; }
 
+@media screen and (min-width: 650px) {
+  .logo {
+    margin-left: 29px; } }
 @media screen and (min-width: 1000px) {
+  .menu {
+    width: 100%;
+    height: 80px; }
+
+  .logo {
+    flex: 1 1 auto;
+    margin-left: 100px;
+    max-height: 80px; }
+
   .srclogo {
     width: 36px;
     height: 36px; } }
@@ -58,28 +70,40 @@ body {
   display: flex;
   flex-flow: row nowrap;
   width: 90%;
+  margin-right: 16px;
   visibility: hidden;
   z-index: 9; }
 
 .div-nav {
   display: flex;
   flex-direction: row nowrap;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  width: 100%; }
 
 .a-nav {
   display: inline-flex;
-  margin-right: 5px; }
+  margin-left: 48px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #060A24; }
 
 @media screen and (min-width: 650px) {
   .nav {
     visibility: visible; } }
+@media screen and (min-width: 1000px) {
+  .nav {
+    margin-right: 100px; }
+
+  .a-nav {
+    font-size: 16px; } }
 /*----------------------Menu Hamburguesa---------------*/
 .hamburguesa {
   display: flex;
   flex-direction: row;
   visibility: visible; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .hamburguesa {
     visibility: hidden; } }
 /** Es el lugar del icono hamburguesa en la barra de navegacion.*/
@@ -187,15 +211,6 @@ h1 {
   height: 48px;
   margin-left: 9px; }
 
-@media screen and (min-width: 431px) {
-  .titulo {
-    height: 48px; }
-
-  .spanazul {
-    color: #0000EC; }
-
-  .p-pale {
-    margin-left: 9px; } }
 .parrafo {
   display: flex;
   justify-content: left;
@@ -247,6 +262,15 @@ h1 {
   font-size: 18px;
   padding-left: 80px; }
 
+@media screen and (min-width: 431px) {
+  .titulo {
+    height: 48px; }
+
+  .spanazul {
+    color: #0000EC; }
+
+  .p-pale {
+    margin-left: 9px; } }
 @media screen and (min-width: 650px) {
   .parrafo {
     width: 628px; }
@@ -256,10 +280,25 @@ h1 {
 
   .parrafo-add {
     display: inline;
-    width: 628px; }
+    width: 628px; } }
+@media screen and (min-width: 1000px) {
+  .article {
+    top: 80px;
+    margin-top: 120px;
+    margin-left: 200px; }
+
+  .titulo {
+    height: 80px; }
+
+  h1 {
+    font-size: 64px;
+    height: 64px; }
 
   .botonconocemas {
-    font-size: 18px; }
+    font-size: 18px;
+    margin-top: 34px;
+    width: 226px;
+    padding-left: 58px; }
 
   .botonconocemas:hover {
     font-size: 18px; } }
@@ -273,7 +312,7 @@ h1 {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  clip-path: polygon(0 3%, 100% 0, 99% 94%, 0% 97%);
+  clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
   height: 1203.5px;
   /*flex: 2 1 auto;*/
   align-content: flex-start; }
@@ -306,6 +345,21 @@ h1 {
   /*flex: 1 1 40%;
   width: 298px;*/ }
 
+@media screen and (min-width: 1000px) {
+  .section-episodios {
+    margin-top: 60px; }
+
+  .divepisodios {
+    clip-path: polygon(0 10%, 100% 0, 99% 94%, 0% 97%);
+    height: 1042.6px; }
+
+  .episodios-p {
+    margin-top: 186px;
+    margin-left: 200px;
+    padding: 0px;
+    font-size: 48px;
+    /*align-items: flex-end;*/ } }
+/*---------------------------FIN SECCION EPISODIOS--------------------------------------*/
 .section-nosotros {
   margin-top: 390px;
   margin-left: 16px;
