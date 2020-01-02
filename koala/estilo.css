@@ -301,7 +301,8 @@ h1 {
     padding-left: 58px; }
 
   .botonconocemas:hover {
-    font-size: 18px; } }
+    font-size: 18px;
+    padding-left: 58px; } }
 /*--------------------------Fin Header----------------------*/
 .section-episodios {
   margin-top: 48px;
