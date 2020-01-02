@@ -128,34 +128,44 @@ body {
                     height: 24px;
                 }
 
-        @media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
                 .srclogo {
                     width: 36px;
                     height: 36px;
                 }
-        }
+}
 
 
             .nav {
                 display: flex;
-                position: absolute;
-                top: 43px; 
+                flex-flow: row nowrap;
+                width: 90%;
+                
                 visibility: hidden;
+                z-index: 9;
             }
-
-        @media screen and (min-width: 600px) {
-            .nav {
-                visibility: visible;
-            }
-        }
 
                 .div-nav {
                     display: flex;
-                    flex-direction: column;    
-                    justify-content: space-evenly;
-                }   
-                        
-            /*Menu Hamburguesa*/
+                    flex-direction: row nowrap;    
+                    justify-content: flex-end;
+                } 
+                
+                    .a-nav {
+                        display: inline-flex;
+                        margin-right: 5px; 
+                    }
+
+
+
+@media screen and (min-width: 650px) {
+            .nav {
+                visibility: visible;
+            }
+}
+
+                       
+/*----------------------Menu Hamburguesa---------------*/
 
             .hamburguesa {
                 display: flex;
@@ -163,11 +173,11 @@ body {
                 visibility: visible;
             }
 
-        @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
             .hamburguesa {
                 visibility: hidden;
             }
-        }
+}
 
                 /** Es el lugar del icono hamburguesa en la barra de navegacion.*/
 
@@ -255,9 +265,7 @@ body {
                                 cursor: pointer;
                             }
 
-            
-
-        /*Fin barra de navegacion*/
+/*-----------------Fin barra de navegacion-----------------------*/
 
         .article {
             display: flex;
@@ -281,13 +289,10 @@ body {
                     height: 48px
                 }
 
-                @media screen and (min-width: 431px) {
                     .spanazul {
-                        color: #0000EC;
+                        margin-left: -9px;
                     }
-                }
                 
-
                 .world {
                     flex-flow: wrap;
                     text-decoration: line-through;
@@ -296,7 +301,22 @@ body {
                    
                 }
 
+
+@media screen and (min-width: 431px) {
                     
+                .titulo {
+                    height: 48px;
+                }    
+
+                    .spanazul {
+                        color: #0000EC;
+                    }
+
+                    .p-pale {
+                        margin-left: 9px;
+                    }
+}
+            
 
             .parrafo {
                 display: flex;
@@ -313,34 +333,47 @@ body {
                 .parrafo-add {
                     flex-flow: wrap;
                     @include parrafos;
-                    font-size: 14px;
+                    font-size: 16px;
                     line-height: 24px;
                     width: 288px;
                     display: none;
                 }
             
-            @media screen and (min-width: 628px) {
+            .botonconocemas {
+                @include boton;
+                padding-left: 87px;
+                margin-top: 22px;
+                margin-bottom: 24px;
+            }
+                .botonconocemas:hover {
+                    @include hover;
+                    padding-left: 80px;
+                }
+
+@media screen and (min-width: 650px) {
+
+            .parrafo {
+                width: 628px;
+            }
+                
                 .parrafop  {
                     display:none;
                 }
 
                 .parrafo-add {
                     display: inline;
+                    width: 628px;
                 }
-            }     
-
-           
-
-                .botonconocemas {
-                    @include boton;
-                    padding-left: 87px;
-                    margin-top: 22px;
-                    margin-bottom: 24px;
+            
+            .botonconocemas {
+                font-size: 18px;
+            }
+                .botonconocemas:hover {
+                    font-size: 18px;
                 }
-                    .botonconocemas:hover {
-                        @include hover;
-                        padding-left: 80px;
-                    }
+} 
+
+/*--------------------------Fin Header----------------------*/
 
     .section-episodios {
         margin-top: 48px;

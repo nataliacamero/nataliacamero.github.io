@@ -50,25 +50,30 @@ body {
   width: 24px;
   height: 24px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .srclogo {
     width: 36px;
     height: 36px; } }
 .nav {
   display: flex;
-  position: absolute;
-  top: 43px;
-  visibility: hidden; }
+  flex-flow: row nowrap;
+  width: 90%;
+  visibility: hidden;
+  z-index: 9; }
 
-@media screen and (min-width: 600px) {
-  .nav {
-    visibility: visible; } }
 .div-nav {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
+  flex-direction: row nowrap;
+  justify-content: flex-end; }
 
-/*Menu Hamburguesa*/
+.a-nav {
+  display: inline-flex;
+  margin-right: 5px; }
+
+@media screen and (min-width: 650px) {
+  .nav {
+    visibility: visible; } }
+/*----------------------Menu Hamburguesa---------------*/
 .hamburguesa {
   display: flex;
   flex-direction: row;
@@ -152,7 +157,7 @@ body {
   color: #060A24;
   cursor: pointer; }
 
-/*Fin barra de navegacion*/
+/*-----------------Fin barra de navegacion-----------------------*/
 .article {
   display: flex;
   flex-flow: column nowrap;
@@ -173,15 +178,24 @@ h1 {
   margin: 0px;
   height: 48px; }
 
-@media screen and (min-width: 431px) {
-  .spanazul {
-    color: #0000EC; } }
+.spanazul {
+  margin-left: -9px; }
+
 .world {
   flex-flow: wrap;
   text-decoration: line-through;
   height: 48px;
   margin-left: 9px; }
 
+@media screen and (min-width: 431px) {
+  .titulo {
+    height: 48px; }
+
+  .spanazul {
+    color: #0000EC; }
+
+  .p-pale {
+    margin-left: 9px; } }
 .parrafo {
   display: flex;
   justify-content: left;
@@ -205,17 +219,11 @@ h1 {
   letter-spacing: 0;
   line-height: 22px;
   width: 288px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   width: 288px;
   display: none; }
 
-@media screen and (min-width: 628px) {
-  .parrafop {
-    display: none; }
-
-  .parrafo-add {
-    display: inline; } }
 .botonconocemas {
   display: inline-flex;
   font-family: 'IBM Plex Mono', Medium;
@@ -239,6 +247,23 @@ h1 {
   font-size: 18px;
   padding-left: 80px; }
 
+@media screen and (min-width: 650px) {
+  .parrafo {
+    width: 628px; }
+
+  .parrafop {
+    display: none; }
+
+  .parrafo-add {
+    display: inline;
+    width: 628px; }
+
+  .botonconocemas {
+    font-size: 18px; }
+
+  .botonconocemas:hover {
+    font-size: 18px; } }
+/*--------------------------Fin Header----------------------*/
 .section-episodios {
   margin-top: 48px;
   width: 100%; }
