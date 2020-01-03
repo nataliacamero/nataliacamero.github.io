@@ -415,6 +415,7 @@ body {
             h1 {
                 font-size: 64px;
                 height: 64px;
+                margin-left: -4px;
             }
     
  
@@ -439,11 +440,10 @@ body {
     }   
         .divepisodios {
             @include polygono;
-            clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
             height: 1203.5px;
             /*flex: 2 1 auto;*/
             align-content: flex-start;
-            
         }
             .episodios-p {
                 display: flex;
@@ -465,10 +465,32 @@ body {
                 .iframe {
                     display: flex;
                     width: 100%;
-                    height: 236px;
+                    height: 168spx;
                     /*flex: 1 1 40%;
                     width: 298px;*/
                 }
+
+
+
+@media screen and (min-width: 650px) {
+
+
+        .divepisodios {
+            height: 710px;
+        }
+      
+            .spotify {
+                flex-flow: row wrap;
+                align-content: flex-start;
+                flex: 2 1 auto;
+            }
+                .iframe {
+                   flex: 1 1 30%;
+                   margin: 7px;  
+                }    
+        
+}
+
 
 @media screen and (min-width: 1000px) {
 
@@ -477,7 +499,7 @@ body {
     }
 
         .divepisodios {
-            clip-path: polygon(0 10%, 100% 0, 99% 94%, 0% 97%);
+            clip-path: polygon(0 10%, 100% 0, 100% 94%, 0% 97%);
             height: 1042.6px;
         }   
 
@@ -486,7 +508,6 @@ body {
             margin-left: 200px;
             padding: 0px;
             font-size: 48px;
-            /*align-items: flex-end;*/
         }
 }
 
@@ -494,20 +515,26 @@ body {
 /*---------------------------FIN SECCION EPISODIOS--------------------------------------*/
         
     .section-nosotros {
-        margin-top: 390px;
+        margin-top: 24em;
         margin-left: 16px;
         margin-right: 16px;
+        /*width: 90%;*/  
+        
+       
     }
+
         .phonenosotros {
-            width: 100%;
+            max-width: 19em;
             position: absolute;
-            top: 1439px;
-            
+            top: 1466px;    
         }
+
         .artnosotros {
+           
             margin-top: 16px;
             
-        }    
+        }
+
             h2 {
                 @include titulos;
             }
@@ -521,6 +548,73 @@ body {
                 margin-bottom: 0px;
             }
 
+
+@media screen and (min-width: 431px) {
+
+            .phonenosotros {
+                max-width: 22em;
+                top: 1333px;      
+            }
+
+}
+
+@media screen and (min-width: 650px) {
+
+    .section-nosotros {
+        width: 100%;  
+        display: flex;
+        flex-direction: row;
+        flex: 1 2 50%;
+        margin-top: 1em;
+    }
+
+        .divphone {
+            flex: 1 1 52%;
+        }
+         
+            .phonenosotros {
+                max-width: 22em;
+                top: 913px;
+                margin-left: -10px;   
+            }
+
+        .artnosotros {
+            display: flex;
+            flex: 1 1 58%;
+            flex-direction: column;
+            padding-left: 15px;
+        }
+
+            h2 {
+                margin: 0px;
+            }
+
+            p {
+                margin-top: 2em;
+            }
+}
+
+
+@media screen and (min-width: 1000px) {
+            
+    
+        .divphone {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+            .phonenosotros {
+                max-width: 28.6em;
+                top: 1405px; 
+            }
+        
+        .artnosotros {
+            align-items: center
+        }
+}
+    
+/*----------------------------FIN SECCION NOSOTROS--------------------------------------*/
     .section-entrevistas {
         margin-top: 16px;
         width: 100%;
@@ -540,6 +634,21 @@ body {
             }
 
 
+
+@media screen and (min-width: 650px) {
+    .section-entrevistas {
+        margin-top: 7em;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .section-entrevistas {
+        margin-top: 20em;
+    }
+}
+/*------------------------------FIN SECCION ENTREVISTAS-----------------------------------------*/
     .section-topicos {
     }
         h3{
