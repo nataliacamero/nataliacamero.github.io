@@ -184,6 +184,10 @@ body {
             .nav {
                 visibility: visible;
             }
+
+                .div-nav {
+                    margin-right: 2em;
+                }
 }
 
 @media screen and (min-width: 1000px) {
@@ -518,9 +522,7 @@ body {
         margin-top: 24em;
         margin-left: 16px;
         margin-right: 16px;
-        /*width: 90%;*/  
-        
-       
+        /*width: 90%;*/     
     }
 
         .phonenosotros {
@@ -570,6 +572,8 @@ body {
 
         .divphone {
             flex: 1 1 52%;
+            display: flex;
+            justify-content: center;
         }
          
             .phonenosotros {
@@ -610,8 +614,19 @@ body {
             }
         
         .artnosotros {
-            align-items: center
+            align-items: center;
+            width: 100%;
         }
+
+            h2 {
+                font-size: 48px;
+                width: 100%;
+            }
+             
+                p {
+                    font-size: 16px;
+                    width: 464px;
+                }
 }
     
 /*----------------------------FIN SECCION NOSOTROS--------------------------------------*/

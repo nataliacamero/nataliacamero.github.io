@@ -90,7 +90,10 @@ body {
 
 @media screen and (min-width: 650px) {
   .nav {
-    visibility: visible; } }
+    visibility: visible; }
+
+  .div-nav {
+    margin-right: 2em; } }
 @media screen and (min-width: 1000px) {
   .nav {
     margin-right: 100px; }
@@ -420,7 +423,9 @@ p {
     margin-top: 1em; }
 
   .divphone {
-    flex: 1 1 52%; }
+    flex: 1 1 52%;
+    display: flex;
+    justify-content: center; }
 
   .phonenosotros {
     max-width: 22em;
@@ -449,7 +454,16 @@ p {
     top: 1405px; }
 
   .artnosotros {
-    align-items: center; } }
+    align-items: center;
+    width: 100%; }
+
+  h2 {
+    font-size: 48px;
+    width: 100%; }
+
+  p {
+    font-size: 16px;
+    width: 464px; } }
 /*----------------------------FIN SECCION NOSOTROS--------------------------------------*/
 .section-entrevistas {
   margin-top: 16px;
