@@ -495,7 +495,14 @@ p {
 
 @media screen and (min-width: 650px) {
   .section-entrevistas {
-    margin-top: 7em; } }
+    margin-top: 7em; }
+
+  .divEntrevistas {
+    display: flex;
+    flex-flow: row wrap; }
+
+  .imgEntrevistas {
+    width: 50%; } }
 @media screen and (min-width: 1000px) {
   .section-entrevistas {
     margin-top: 20em;
@@ -505,10 +512,6 @@ p {
   .h3-entrevistas {
     margin: 64px 16px 36px 200px;
     font-size: 48px; }
-
-  .divEntrevistas {
-    display: flex;
-    flex-flow: row wrap; }
 
   .imgEntrevistas {
     width: 33.3%; } }

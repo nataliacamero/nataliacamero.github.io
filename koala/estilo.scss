@@ -668,7 +668,13 @@ body {
     .section-entrevistas {
         margin-top: 7em;
     }
-
+        .divEntrevistas {
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .imgEntrevistas {      
+                width: 50%;
+            }
 }
 
 @media screen and (min-width: 1000px) {
@@ -683,14 +689,9 @@ body {
             margin: 64px 16px 36px 200px;
             font-size: 48px;
         }
-
-            .divEntrevistas {
-                display: flex;
-                flex-flow: row wrap;
+            .imgEntrevistas {      
+                width: 33.3%;
             }
-                .imgEntrevistas {      
-                    width: 33.3%;
-                }
 }
 
 
