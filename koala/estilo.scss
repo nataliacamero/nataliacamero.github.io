@@ -449,8 +449,8 @@ body {
             @include polygono;
             clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
             height: 1203.5px;
-            /*flex: 2 1 auto;*/
-            align-content: flex-start;
+            display: flex;
+            flex-flow: column nowrap;
         }
             .episodios-p {
                 display: flex;
@@ -466,15 +466,14 @@ body {
 
             .spotify {
                 display: flex;
-                flex-flow: column;
+                flex-flow: column nowrap;
                 margin: 0px 11px 0px 11px;
             }
                 .iframe {
                     display: flex;
                     width: 100%;
-                    height: 168px;
-                    /*flex: 1 1 40%;
-                    width: 298px;*/
+                    height: 241px;
+                   
                 }
 
 
@@ -519,7 +518,7 @@ body {
 }
 
 
-/*---------------------------FIN SECCION EPISODIOS--------------------------------------*/
+/*---------------------------SECCION NOSOTROS--------------------------------------*/
         
     .section-nosotros {
         margin-top: 24em;
@@ -557,11 +556,20 @@ body {
 
 
 @media screen and (min-width: 431px) {
+    .divphone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        .phonenosotros {
+            max-width: 22em;
+            top: 1418px;  
+        }
 
-            .phonenosotros {
-                max-width: 22em;
-                top: 1333px;      
-            }
+        .artnosotros {
+            margin-top: 100px;
+            
+        }
 
 }
 
@@ -586,7 +594,7 @@ body {
          
             .phonenosotros {
                 max-width: 22em;
-                top: 913px;
+                top: 981px;
                 margin-left: -10px;   
             }
 
@@ -595,6 +603,7 @@ body {
             flex: 1 1 58%;
             flex-direction: column;
             padding-right: 2em;
+            
         }
 
             h2 {
