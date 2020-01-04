@@ -887,7 +887,7 @@ body {
         flex-flow: column wrap;
         align-content: center;
         text-align: center;
-        padding: 10px 16px 35px 16px;
+        padding: 10px 1em 2em 1em;
     }   
         .div-redes {
             display: flex;
@@ -908,6 +908,12 @@ body {
             flex-direction: row;
             justify-content: inherit;
             align-items: center;
-            width: 42%;
+            width: 259.3px;  
         }
+}
+
+@media screen and (min-width: 1000px) {
+    .div-redes {
+       margin-right: 100px;
+    }
 }
