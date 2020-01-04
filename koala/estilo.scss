@@ -30,9 +30,8 @@ body {
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
-    width: 288px;
-    
 }
+    
 /* Set de topicos*/
 
 @mixin topicos {
@@ -397,7 +396,7 @@ body {
                 }
 
                 .parrafo-add {
-                    display: inline;
+                    display: flex;
                     width: 628px;
                 }
             
@@ -469,7 +468,7 @@ body {
                 .iframe {
                     display: flex;
                     width: 100%;
-                    height: 168spx;
+                    height: 168px;
                     /*flex: 1 1 40%;
                     width: 298px;*/
                 }
@@ -528,7 +527,8 @@ body {
         .phonenosotros {
             max-width: 19em;
             position: absolute;
-            top: 1466px;    
+            top: 1466px;
+            margin-left: -10px;    
         }
 
         .artnosotros {
@@ -539,6 +539,7 @@ body {
 
             h2 {
                 @include titulos;
+                margin-bottom: 16px;
             }
 
             p {
@@ -600,17 +601,21 @@ body {
 
 
 @media screen and (min-width: 1000px) {
-            
+    
+    .section-nosotros {
+        height: 100em;
+    }
     
         .divphone {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-end;
         }
     
             .phonenosotros {
                 max-width: 28.6em;
-                top: 1405px; 
+                top: 1405px;
+                
             }
         
         .artnosotros {
@@ -618,15 +623,19 @@ body {
             width: 100%;
         }
 
-            h2 {
-                font-size: 48px;
+            .p-nosotros {
                 width: 100%;
-            }
-             
-                p {
-                    font-size: 16px;
-                    width: 464px;
+            }    
+
+                h2 {
+                    font-size: 48px;
+                    width: 100%;
                 }
+                
+                    p {
+                        font-size: 16px;
+                        width: 464px;
+                    }
 }
     
 /*----------------------------FIN SECCION NOSOTROS--------------------------------------*/
@@ -661,7 +670,12 @@ body {
 
     .section-entrevistas {
         margin-top: 20em;
-    }
+    }   
+
+            h3 {
+                margin: 64px 16px 16px 200px;
+                font-size: 48px;
+            }
 }
 /*------------------------------FIN SECCION ENTREVISTAS-----------------------------------------*/
     .section-topicos {
@@ -699,6 +713,19 @@ body {
                 @include topicos;
                 margin-top: 48px;
             }
+@media screen and (min-width: 650px) {
+    .divTopicos {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+}
+/*----------------------------FIN SECCION TOPICOS*/            
     
     .section-novedades {
         display: flex;
@@ -709,7 +736,7 @@ body {
     }
         .div-novedades {
             @include polygono;
-            clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
             height: 341px;
             justify-content: center;
             align-items: center;
@@ -717,6 +744,7 @@ body {
         .pnovedades {
             @include titulos;
             color: #ffffff;
+            width: min-content;
         }
 
         .botonNovedades {
@@ -727,6 +755,17 @@ body {
                 @include hover;
                 padding-left: 35px;
             }
+
+
+@media screen and (min-width: 650px) {
+    
+}
+
+@media screen and (min-width: 1000px) {
+    
+}
+
+/*---------------------------------FIN SECCION NOVEDADES*/    
     
     .footer {
         display: flex;
