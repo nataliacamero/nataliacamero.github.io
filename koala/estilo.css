@@ -728,8 +728,19 @@ p {
     padding-left: 56px;
     font-size: 18px; } }
 @media screen and (min-width: 1000px) {
+  .section-novedades {
+    height: 518px; }
+
+  .div-novedades {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
+    height: 518px; }
+
   .pnovedades {
-    width: 53%; } }
+    font-size: 48px; } }
 /*---------------------------------FOOTER---------------------*/
 .footer {
   display: flex;
@@ -757,6 +768,9 @@ p {
     align-items: center;
     width: 259.3px; } }
 @media screen and (min-width: 1000px) {
+  .footer {
+    padding: 0px 0em 0em 0em; }
+
   .div-redes {
     margin-right: 100px; } }
 
