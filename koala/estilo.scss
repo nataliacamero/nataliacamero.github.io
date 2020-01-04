@@ -498,6 +498,13 @@ body {
 }
 
 
+@media screen and (min-width: 964px){
+    .iframe {
+        flex: 1 1 32%;
+    }  
+
+}
+
 @media screen and (min-width: 1000px) {
 
     .section-episodios {
@@ -514,6 +521,10 @@ body {
             margin-left: 200px;
             padding: 0px;
             font-size: 48px;
+        }
+
+        .spotify {
+            margin: 0px 100px 0px 100px;
         }
 }
 
@@ -615,6 +626,8 @@ body {
                 font-size: 16px;
             }
 }
+
+
 
 
 @media screen and (min-width: 1000px) {
