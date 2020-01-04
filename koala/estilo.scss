@@ -526,6 +526,9 @@ body {
         .spotify {
             margin: 0px 100px 0px 100px;
         }
+        .iframe {
+            flex: 1 1 34%;
+        }
 }
 
 
@@ -706,7 +709,7 @@ body {
 @media screen and (min-width: 1000px) {
 
     .section-entrevistas {
-        margin-top: 20em;
+        margin-top: 14em;
         display: flex;
         flex-direction: column;
     }   
