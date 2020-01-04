@@ -653,9 +653,7 @@ p {
 /*----------------------------FIN SECCION TOPICOS*/
 .section-novedades {
   display: flex;
-  flex-flow: column;
   text-align: center;
-  align-items: center;
   margin-top: 48px; }
 
 .div-novedades {
@@ -665,8 +663,11 @@ p {
   flex-flow: column nowrap;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   height: 341px;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center; }
+  flex-flow: column; }
 
 .pnovedades {
   font-family: 'IBM Plex Sans';
@@ -699,6 +700,23 @@ p {
   font-size: 18px;
   padding-left: 35px; }
 
+@media screen and (min-width: 650px) {
+  .pnovedades {
+    width: 53%; }
+
+  .botonNovedades {
+    padding-left: 55px;
+    height: 56px;
+    width: 345px;
+    font-size: 18px;
+    line-height: 60px; }
+
+  .botonNovedades:hover {
+    padding-left: 56px;
+    font-size: 18px; } }
+@media screen and (min-width: 1000px) {
+  .pnovedades {
+    width: 53%; } }
 /*---------------------------------FIN SECCION NOVEDADES*/
 .footer {
   display: flex;

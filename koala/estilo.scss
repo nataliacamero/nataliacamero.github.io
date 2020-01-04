@@ -820,17 +820,18 @@ body {
     
     .section-novedades {
         display: flex;
-        flex-flow: column;
         text-align: center;
-        align-items: center;
         margin-top: 48px;
     }
         .div-novedades {
             @include polygono;
             clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
             height: 341px;
-            justify-content: center;
+            width: 100%;
+            display: flex;
             align-items: center;
+            justify-content: center;
+            flex-flow: column;
         }
         .pnovedades {
             @include titulos;
@@ -849,11 +850,30 @@ body {
 
 
 @media screen and (min-width: 650px) {
+    .pnovedades {
+        width: 53%;
+        
+    }
+
+    .botonNovedades {
+        padding-left: 55px;
+        height: 56px;
+        width: 345px;
+        font-size: 18px;
+        line-height: 60px;
+    }   
+        .botonNovedades:hover {
+            padding-left: 56px;
+            font-size: 18px;
+        }
     
 }
 
 @media screen and (min-width: 1000px) {
     
+    .pnovedades {
+        width: 53%;
+        }
 }
 
 /*---------------------------------FIN SECCION NOVEDADES*/    
