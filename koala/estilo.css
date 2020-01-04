@@ -421,8 +421,8 @@ p {
     flex: 1 2 50%;
     margin-top: 1em;
     margin-right: 0px;
-    padding-left: 1em;
-    margin-left: 0px; }
+    margin-left: 0px;
+    padding-left: 1em; }
 
   .divphone {
     flex: 1 1 52%;
@@ -437,13 +437,15 @@ p {
   .artnosotros {
     display: flex;
     flex: 1 1 58%;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-right: 2em; }
 
   h2 {
     margin: 0px; }
 
   p {
-    margin-top: 2em; } }
+    margin-top: 2em;
+    font-size: 16px; } }
 @media screen and (min-width: 1000px) {
   .section-nosotros {
     height: 100em; }
@@ -469,9 +471,8 @@ p {
     width: 100%; }
 
   p {
-    font-size: 16px;
     width: 464px; } }
-/*----------------------------FIN SECCION NOSOTROS--------------------------------------*/
+/*----------------------------SECCIÓN ENTREVISTAS--------------------------------------*/
 .section-entrevistas {
   margin-top: 16px;
   width: 100%; }

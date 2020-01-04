@@ -570,8 +570,8 @@ body {
         flex: 1 2 50%;
         margin-top: 1em;
         margin-right: 0px;
-        padding-left: 1em;
         margin-left: 0px;
+        padding-left: 1em;
     }
 
         .divphone {
@@ -590,6 +590,7 @@ body {
             display: flex;
             flex: 1 1 58%;
             flex-direction: column;
+            padding-right: 2em;
         }
 
             h2 {
@@ -598,6 +599,7 @@ body {
 
             p {
                 margin-top: 2em;
+                font-size: 16px;
             }
 }
 
@@ -635,12 +637,13 @@ body {
                 }
                 
                     p {
-                        font-size: 16px;
                         width: 464px;
                     }
 }
     
-/*----------------------------FIN SECCION NOSOTROS--------------------------------------*/
+/*----------------------------SECCIÓN ENTREVISTAS--------------------------------------*/
+
+
     .section-entrevistas {
         margin-top: 16px;
         width: 100%;
