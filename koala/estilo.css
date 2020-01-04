@@ -477,7 +477,7 @@ p {
   margin-top: 16px;
   width: 100%; }
 
-h3 {
+.h3-entrevistas {
   font-family: 'IBM Plex Sans';
   font-weight: lighter;
   font-size: 36px;
@@ -498,20 +498,29 @@ h3 {
     margin-top: 7em; } }
 @media screen and (min-width: 1000px) {
   .section-entrevistas {
-    margin-top: 20em; }
+    margin-top: 20em;
+    display: flex;
+    flex-direction: column; }
 
-  h3 {
-    margin: 64px 16px 16px 200px;
-    font-size: 48px; } }
-/*------------------------------FIN SECCION ENTREVISTAS-----------------------------------------*/
-h3 {
+  .h3-entrevistas {
+    margin: 64px 16px 36px 200px;
+    font-size: 48px; }
+
+  .divEntrevistas {
+    display: flex;
+    flex-flow: row wrap; }
+
+  .imgEntrevistas {
+    width: 33.3%; } }
+/*------------------------------SECCION TÓPICOS-----------------------------------------*/
+.h3-topicos {
   font-family: 'IBM Plex Sans';
   font-weight: lighter;
   font-size: 36px;
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
-  margin: 48px 16px 16px 16px; }
+  margin: 50px 16px 16px 16px; }
 
 .divTopicos {
   display: flex;
@@ -580,6 +589,10 @@ h3 {
     flex-flow: row wrap;
     text-align: center;
     align-items: center; } }
+@media screen and (min-width: 1000px) {
+  .h3-topicos {
+    margin: 64px 16px 36px 200px;
+    font-size: 48px; } }
 /*----------------------------FIN SECCION TOPICOS*/
 .section-novedades {
   display: flex;

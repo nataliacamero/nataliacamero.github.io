@@ -648,7 +648,7 @@ body {
         margin-top: 16px;
         width: 100%;
     }   
-        h3 {
+        .h3-entrevistas {
             @include titulos;
             margin: 0px 16px 16px 16px;
         }
@@ -675,19 +675,33 @@ body {
 
     .section-entrevistas {
         margin-top: 20em;
+        display: flex;
+        flex-direction: column;
     }   
 
-            h3 {
-                margin: 64px 16px 16px 200px;
-                font-size: 48px;
+        .h3-entrevistas {
+            margin: 64px 16px 36px 200px;
+            font-size: 48px;
+        }
+
+            .divEntrevistas {
+                display: flex;
+                flex-flow: row wrap;
             }
+                .imgEntrevistas {      
+                    width: 33.3%;
+                }
 }
-/*------------------------------FIN SECCION ENTREVISTAS-----------------------------------------*/
-    .section-topicos {
+
+
+/*------------------------------SECCION TÓPICOS-----------------------------------------*/
+    
+
+.section-topicos {
     }
-        h3{
+        .h3-topicos{
             @include titulos;
-            margin: 48px 16px 16px 16px;
+            margin: 50px 16px 16px 16px;
         }
 
         .divTopicos {
@@ -728,7 +742,10 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-    
+        .h3-topicos {
+            margin: 64px 16px 36px 200px;
+            font-size: 48px;
+        }
 }
 /*----------------------------FIN SECCION TOPICOS*/            
     
