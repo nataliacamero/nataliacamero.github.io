@@ -66,6 +66,7 @@ body {
   .srclogo {
     width: 36px;
     height: 36px; } }
+/*----------------BARRA DE NAVEGACION SUPERIOR DESPUES DE 650PX------------------------------------*/
 .nav {
   display: flex;
   flex-flow: row nowrap;
@@ -154,7 +155,7 @@ body {
   content: "X";
   font-size: 0.9em; }
 
-/* -----------------*/
+/* -----BARRA DE NAVEGACION------------*/
 .nav-vinculos {
   display: flex;
   flex-direction: column;
@@ -184,7 +185,7 @@ body {
   color: #060A24;
   cursor: pointer; }
 
-/*-----------------Fin barra de navegacion-----------------------*/
+/*---------------------------------HEADER-----------------------*/
 .article {
   display: flex;
   flex-flow: column nowrap;
@@ -281,7 +282,17 @@ h1 {
 
   .parrafo-add {
     display: flex;
-    width: 628px; } }
+    width: 628px; }
+
+  .botonconocemas {
+    font-size: 18px;
+    margin-top: 34px;
+    width: 226px;
+    padding-left: 58px; }
+
+  .botonconocemas:hover {
+    font-size: 18px;
+    padding-left: 58px; } }
 @media screen and (min-width: 1000px) {
   .article {
     top: 80px;
@@ -294,17 +305,7 @@ h1 {
   h1 {
     font-size: 64px;
     height: 64px;
-    margin-left: -4px; }
-
-  .botonconocemas {
-    font-size: 18px;
-    margin-top: 34px;
-    width: 226px;
-    padding-left: 58px; }
-
-  .botonconocemas:hover {
-    font-size: 18px;
-    padding-left: 58px; } }
+    margin-left: -4px; } }
 /*--------------------------Fin Header----------------------*/
 .section-episodios {
   margin-top: 48px;
@@ -717,7 +718,7 @@ p {
 @media screen and (min-width: 1000px) {
   .pnovedades {
     width: 53%; } }
-/*---------------------------------FIN SECCION NOVEDADES*/
+/*---------------------------------FOOTER---------------------*/
 .footer {
   display: flex;
   flex-flow: column wrap;
@@ -730,5 +731,18 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 10px; }
+
+@media screen and (min-width: 650px) {
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+
+  .div-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    align-items: center;
+    width: 42%; } }
 
 /*# sourceMappingURL=estilo.css.map */

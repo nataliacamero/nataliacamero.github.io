@@ -152,6 +152,8 @@ body {
                 }
 }
 
+/*----------------BARRA DE NAVEGACION SUPERIOR DESPUES DE 650PX------------------------------------*/
+
             .nav {
                 display: flex;
                 flex-flow: row nowrap;
@@ -194,9 +196,9 @@ body {
                         margin-right: 100px;
                     }
 
-                    .a-nav {
-                        font-size: 16px;
-                    }
+                        .a-nav {
+                            font-size: 16px;
+                        }
 
 }
 
@@ -267,7 +269,7 @@ body {
                         content: "X";
                         font-size: 0.9em;
                     }
-                    /* -----------------*/
+        /* -----BARRA DE NAVEGACION------------*/
                     
                     .nav-vinculos {
                         display: flex;
@@ -301,7 +303,7 @@ body {
                                 cursor: pointer;
                             }
 
-/*-----------------Fin barra de navegacion-----------------------*/
+/*---------------------------------HEADER-----------------------*/
 
         .article {
             display: flex;
@@ -399,6 +401,17 @@ body {
                     display: flex;
                     width: 628px;
                 }
+
+            .botonconocemas {
+                font-size: 18px;
+                margin-top: 34px;
+                width: 226px;
+                padding-left: 58px;
+            }
+                .botonconocemas:hover {
+                    font-size: 18px;
+                    padding-left: 58px;
+                }
             
             
 } 
@@ -422,16 +435,7 @@ body {
             }
     
  
-            .botonconocemas {
-                font-size: 18px;
-                margin-top: 34px;
-                width: 226px;
-                padding-left: 58px;
-            }
-                .botonconocemas:hover {
-                    font-size: 18px;
-                    padding-left: 58px;
-                }
+           
 }
 
 
@@ -876,7 +880,7 @@ body {
         }
 }
 
-/*---------------------------------FIN SECCION NOVEDADES*/    
+/*---------------------------------FOOTER---------------------*/    
     
     .footer {
         display: flex;
@@ -891,3 +895,19 @@ body {
             justify-content: space-evenly;
             margin-top: 10px;
         }
+
+@media screen and (min-width: 650px) {
+    .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+        .div-redes {
+            display: flex;
+            flex-direction: row;
+            justify-content: inherit;
+            align-items: center;
+            width: 42%;
+        }
+}
