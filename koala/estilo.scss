@@ -699,10 +699,14 @@ body {
     
 
 .section-topicos {
-    }
-        .h3-topicos{
+    width: 100%;
+    display: flex;
+    flex-flow: column; 
+}
+
+      .h3-topicos{
             @include titulos;
-            margin: 50px 16px 16px 16px;
+            margin: 48px 16px 16px 16px;
         }
 
         .divTopicos {
@@ -710,6 +714,7 @@ body {
             flex-flow: column;
             text-align: center;
             align-items: center;
+            width: 100%;
         }
             .divtrabajo {
                 @include topicos;
@@ -733,20 +738,84 @@ body {
                 @include topicos;
                 margin-top: 48px;
             }
+
 @media screen and (min-width: 650px) {
-    .divTopicos {
-        display: flex;
-        flex-flow: row wrap;
-        text-align: center;
-        align-items: center;
-    }
+
+        .divTopicos {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            align-items: center;
+        }
+
+            .divtrabajo  {
+                width: 50%;
+            }
+
+            .divrepensando {
+                width: 50%;
+            }
+
+            .divBases {
+                width: 50%;
+            }
+
+            .divSeguridad {
+                width: 50%;
+            }
 }
 
 @media screen and (min-width: 1000px) {
-        .h3-topicos {
-            margin: 64px 16px 36px 200px;
-            font-size: 48px;
+    .section-topicos {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap; 
+    }    
+    
+        .artopicos {
+            width: 100%;
         }
+        
+        
+        .h3-topicos {
+                margin: 64px 16px 36px 200px;
+                font-size: 48px;
+            }
+
+            .divTopicos {
+                flex-flow: row nowrap;
+                /*padding-left: 17.37em;
+                padding-right: 17.37em;*/
+            }
+
+                .divtrabajo  {
+                    width: 25%;
+                    padding-right: 4.9em;
+                    padding-left: 8em;
+                }
+
+                    .ptopicos {
+                        margin: 0px;
+                        width: 100%;
+                    }
+
+                .divrepensando {
+                    width: 25%;
+                    padding-left: 4.9em;
+                    padding-right: 4.9em;
+                }
+
+                .divBases {
+                    width: 25%;
+                    padding-left: 4.9em;
+                    padding-right: 4.9em;
+                }
+
+                .divSeguridad {
+                    width: 25%;
+                    padding-left: 4.9em;
+                    padding-right: 8em;
+                }
 }
 /*----------------------------FIN SECCION TOPICOS*/            
     
