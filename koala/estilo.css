@@ -320,7 +320,7 @@ h1 {
     font-size: 64px;
     height: 64px;
     margin-left: -4px; } }
-/*--------------------------Fin Header----------------------*/
+/*-------------------------SECCION EPISODIOS---------------------*/
 .section-episodios {
   margin-top: 48px;
   width: 100%; }
@@ -335,7 +335,7 @@ h1 {
   display: flex;
   flex-flow: column nowrap; }
 
-.episodios-p {
+.episodiosh2 {
   display: flex;
   font-family: 'IBM Plex Sans';
   font-weight: lighter;
@@ -385,7 +385,7 @@ h1 {
     clip-path: polygon(0 10%, 100% 0, 100% 94%, 0% 97%);
     height: 1042.6px; }
 
-  .episodios-p {
+  .episodiosh2 {
     margin-top: 186px;
     margin-left: 200px;
     padding: 0px;

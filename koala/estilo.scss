@@ -455,7 +455,7 @@ body {
 }
 
 
-/*--------------------------Fin Header----------------------*/
+/*-------------------------SECCION EPISODIOS---------------------*/
 
     .section-episodios {
         margin-top: 48px;
@@ -468,7 +468,7 @@ body {
             display: flex;
             flex-flow: column nowrap;
         }
-            .episodios-p {
+            .episodiosh2 {
                 display: flex;
                 @include titulos;
                 color: #ffffff;
@@ -533,7 +533,7 @@ body {
             height: 1042.6px;
         }   
 
-        .episodios-p {
+        .episodiosh2 {
             margin-top: 186px;
             margin-left: 200px;
             padding: 0px;
