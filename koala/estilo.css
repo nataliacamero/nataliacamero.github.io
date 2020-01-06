@@ -415,15 +415,15 @@ h2 {
   line-height: 42px;
   margin-bottom: 8px;
   width: 93%;
-  margin-left: 16px;
+  margin-left: 0.5em;
   margin-top: 57px; }
 
 .divnosotros {
   display: flex;
   flex-flow: column nowrap;
-  width: 288px;
-  margin-left: 16px;
-  margin-right: 16px; }
+  width: 90%;
+  margin-left: 1em;
+  margin-right: 1em; }
 
 p {
   font-family: 'IBM Plex Mono';
