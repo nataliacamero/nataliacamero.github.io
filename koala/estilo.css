@@ -644,43 +644,53 @@ p {
   .section-topicos {
     width: 100%;
     display: flex;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    height: 400px; }
 
   .artopicos {
-    width: 100%; }
+    width: 100%;
+    height: 400px; }
 
   .h3-topicos {
-    margin: 64px 16px 36px 200px;
+    margin: 64px 16px 48px 200px;
     font-size: 48px; }
 
   .divTopicos {
     flex-flow: row nowrap;
     justify-content: center;
     margin-top: 69px;
+    height: 180px;
     /*padding-left: 17.37em;
     padding-right: 17.37em;*/ }
 
   .divtrabajo {
-    width: 15%;
+    width: 17%;
     margin-top: 0px; }
 
   .ptopicos {
-    margin: 0px;
+    margin: 29px 0px 0px 0px;
     width: 100%;
-    height: 32px; }
+    height: 32px;
+    line-height: 32px; }
 
   .divrepensando {
-    width: 15%;
+    width: 17%;
     margin-top: 0px; }
 
   .divBases {
-    width: 15%;
+    width: 17%;
     margin-top: 0px; }
 
   .divSeguridad {
-    width: 15%;
-    margin-top: 0px; } }
-/*----------------------------FIN SECCION TOPICOS*/
+    width: 17%;
+    margin-top: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+
+  .topic-seguridad {
+    width: 95%; } }
+/*----------------------------SECCION NOVEDADES---------------------------*/
 .section-novedades {
   display: flex;
   text-align: center;
