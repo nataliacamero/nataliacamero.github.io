@@ -658,43 +658,39 @@ body {
 }
 
 
-
-
 @media screen and (min-width: 1000px) {
     
     .section-nosotros {
         height: 100em;
     }
-    
-        .divphone {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+        .divnosotros {
+            max-width: 50%;
         }
-    
-            .phonenosotros {
-                max-width: 28.6em;
-                top: 1405px;
-                height: auto;
+
+        .h2-nosotros {
+            font-size: 48px;
+            max-width: 464px;
+        }
+
+            .pnosotros {
+                max-width: 464px;
             }
-        
-            .divnosotros {
-            align-items: center;
-            width: 100%;
-        }
 
-            .p-nosotros {
-                width: 100%;
-            }    
+            p {
+                max-width: 464px;  
+            }
 
-                h2 {
-                    font-size: 48px;
-                    width: 100%;
+            .divphone {
+                width: 50%;
+            }
+
+            .phonenosotros {
+                    max-width: 28.6em;
+                    top: 1405px;
+                    height: auto;
                 }
-                
-                    p {
-                        width: 464px;
-                    }
+        
+              
 }
     
 /*----------------------------SECCIÓN ENTREVISTAS--------------------------------------*/
@@ -741,7 +737,7 @@ body {
 @media screen and (min-width: 1000px) {
 
     .section-entrevistas {
-        margin-top: 18em;
+        margin-top: 8em;
         display: flex;
         flex-direction: column;
     }   
@@ -855,8 +851,6 @@ body {
                 justify-content: center;
                 margin-top: 69px;
                 height: 180px;
-                /*padding-left: 17.37em;
-                padding-right: 17.37em;*/
             }
 
                 .divtrabajo  {
@@ -893,9 +887,7 @@ body {
                         width: 95%;
                     }
 
-                    
-
-                
+                  
 }
 /*----------------------------SECCION NOVEDADES---------------------------*/            
     

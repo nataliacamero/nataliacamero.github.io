@@ -493,28 +493,26 @@ p {
   .section-nosotros {
     height: 100em; }
 
+  .divnosotros {
+    max-width: 50%; }
+
+  .h2-nosotros {
+    font-size: 48px;
+    max-width: 464px; }
+
+  .pnosotros {
+    max-width: 464px; }
+
+  p {
+    max-width: 464px; }
+
   .divphone {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
+    width: 50%; }
 
   .phonenosotros {
     max-width: 28.6em;
-    top: 1405px; }
-
-  .divnosotros {
-    align-items: center;
-    width: 100%; }
-
-  .p-nosotros {
-    width: 100%; }
-
-  h2 {
-    font-size: 48px;
-    width: 100%; }
-
-  p {
-    width: 464px; } }
+    top: 1405px;
+    height: auto; } }
 /*----------------------------SECCIÓN ENTREVISTAS--------------------------------------*/
 .section-entrevistas {
   margin-top: 16px;
@@ -552,7 +550,7 @@ p {
     width: 50%; } }
 @media screen and (min-width: 1000px) {
   .section-entrevistas {
-    margin-top: 18em;
+    margin-top: 8em;
     display: flex;
     flex-direction: column; }
 
@@ -680,9 +678,7 @@ p {
     flex-flow: row nowrap;
     justify-content: center;
     margin-top: 69px;
-    height: 180px;
-    /*padding-left: 17.37em;
-    padding-right: 17.37em;*/ }
+    height: 180px; }
 
   .divtrabajo {
     width: 17%;
