@@ -560,7 +560,7 @@ body {
         margin-top: 24em;
         width: 100%;     
     }
-        h2 {
+        .h2-nosotros {
             @include titulos;
             margin-bottom: 8px;
             width: 93%;
@@ -602,18 +602,8 @@ body {
 
       
 @media screen and (min-width: 431px) {
-    
-    
-    
-    
-    
-    .divphone {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+       
         .phonenosotros {
-            max-width: 22em;
             top: 1418px;  
         }
 }
@@ -621,20 +611,27 @@ body {
 @media screen and (min-width: 650px) {
 
     .section-nosotros {
-        width: 100%;  
-        display: flex;
-        flex-direction: row;
-        flex: 1 2 50%;
-        margin-top: 1em;
-        margin-right: 0px;
-        margin-left: 0px;
-        padding-left: 1em;
+        margin-top: 27em;
     }
+
+        
+        .divnosotros {
+            display: flex;
+            flex: 1 1 58%;
+            flex-direction: column;
+            padding-right: 2em;
+            
+        }
+
+            p {
+                margin-top: 2em;
+                font-size: 16px;
+            }
 
         .divphone {
             flex: 1 1 52%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
         }
          
             .phonenosotros {
@@ -643,22 +640,10 @@ body {
                 margin-left: -10px;   
             }
 
-            .divnosotros {
-            display: flex;
-            flex: 1 1 58%;
-            flex-direction: column;
-            padding-right: 2em;
             
-        }
 
-            h2 {
-                margin: 0px;
-            }
 
-            p {
-                margin-top: 2em;
-                font-size: 16px;
-            }
+            
 }
 
 

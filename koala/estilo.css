@@ -406,7 +406,7 @@ h1 {
   margin-top: 24em;
   width: 100%; }
 
-h2 {
+.h2-nosotros {
   font-family: 'IBM Plex Sans';
   font-weight: lighter;
   font-size: 36px;
@@ -451,34 +451,11 @@ p {
   height: 517px; }
 
 @media screen and (min-width: 431px) {
-  .divphone {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-
   .phonenosotros {
-    max-width: 22em;
     top: 1418px; } }
 @media screen and (min-width: 650px) {
   .section-nosotros {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex: 1 2 50%;
-    margin-top: 1em;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-left: 1em; }
-
-  .divphone {
-    flex: 1 1 52%;
-    display: flex;
-    justify-content: center; }
-
-  .phonenosotros {
-    max-width: 22em;
-    top: 981px;
-    margin-left: -10px; }
+    margin-top: 27em; }
 
   .divnosotros {
     display: flex;
@@ -486,12 +463,19 @@ p {
     flex-direction: column;
     padding-right: 2em; }
 
-  h2 {
-    margin: 0px; }
-
   p {
     margin-top: 2em;
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .divphone {
+    flex: 1 1 52%;
+    display: flex;
+    justify-content: flex-start; }
+
+  .phonenosotros {
+    max-width: 22em;
+    top: 981px;
+    margin-left: -10px; } }
 @media screen and (min-width: 1000px) {
   .section-nosotros {
     height: 100em; }
