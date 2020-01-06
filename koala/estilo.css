@@ -94,14 +94,14 @@ body {
   font-size: 16px;
   color: #00F3BB;
   letter-spacing: 0;
-  line-height: 28px; }
+  text-decoration: line-through; }
 
 .a-nav:active {
   font-family: 'IBM Plex Mono';
   font-size: 16px;
   color: rgba(6, 10, 36, 0.56);
   letter-spacing: 0;
-  line-height: 28px; }
+  text-decoration: line-through; }
 
 @media screen and (min-width: 650px) {
   .nav {
