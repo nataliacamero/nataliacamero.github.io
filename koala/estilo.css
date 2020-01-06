@@ -538,7 +538,7 @@ p {
     width: 50%; } }
 @media screen and (min-width: 1000px) {
   .section-entrevistas {
-    margin-top: 14em;
+    margin-top: 18em;
     display: flex;
     flex-direction: column; }
 
