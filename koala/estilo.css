@@ -474,7 +474,7 @@ p {
     padding-right: 2em; }
 
   p {
-    margin-top: 2em;
+    margin-top: 1em;
     font-size: 16px; }
 
   .divphone {
@@ -762,13 +762,15 @@ p {
     width: 53%;
     margin-top: 39px; }
 
+  .divbotonovedades {
+    height: 56px; }
+
   .botonNovedades {
     padding-left: 55px;
     height: 56px;
     width: 345px;
     font-size: 18px;
-    line-height: 60px;
-    margin-top: 36px; }
+    line-height: 60px; }
 
   .botonNovedades:hover {
     padding-left: 56px;
@@ -786,7 +788,9 @@ p {
     height: 518px; }
 
   .h2novedades {
-    font-size: 48px; } }
+    font-size: 48px;
+    width: 70%;
+    margin-top: 100px; } }
 /*---------------------------------FOOTER---------------------*/
 .footer {
   display: flex;
@@ -799,7 +803,10 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 10px; }
+  margin-top: 10px;
+  width: 100%;
+  padding-left: 130px;
+  padding-right: 144px; }
 
 i {
   text-decoration: none;
@@ -811,17 +818,21 @@ i {
     flex-flow: row nowrap;
     justify-content: space-between; }
 
+  .p-footer {
+    width: 42%; }
+
   .div-redes {
     display: flex;
     flex-direction: row;
-    justify-content: inherit;
     align-items: center;
-    width: 259.3px; } }
+    width: 259.3px;
+    padding: 0px; } }
 @media screen and (min-width: 1000px) {
   .footer {
     padding: 0px 0em 0em 0em; }
 
   .div-redes {
-    margin-right: 100px; } }
+    margin-right: 100px;
+    justify-content: space-around; } }
 
 /*# sourceMappingURL=estilo.css.map */
