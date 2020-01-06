@@ -758,6 +758,10 @@ p {
   justify-content: space-evenly;
   margin-top: 10px; }
 
+i {
+  text-decoration: none;
+  color: #060A24; }
+
 @media screen and (min-width: 650px) {
   .footer {
     display: flex;
