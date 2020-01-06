@@ -556,15 +556,15 @@ body {
     .section-nosotros {
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
         margin-top: 24em;
         width: 100%;     
     }
         h2 {
             @include titulos;
             margin-bottom: 8px;
-            width: 288px;
+            width: 93%;
             margin-left: 16px;
-            margin-right: 16px;
             margin-top: 57px;
         }
         
@@ -585,22 +585,28 @@ body {
                 margin-bottom: 0px;
                 width: 97%;
             }
+
         .divphone {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 width: 100%;
+                
         }
             .phonenosotros {
-                max-width: 22em;
+                max-width: 22.5em;
                 position: absolute;
                 top: 1466px; 
-                height: 517px; 
+                height: 517px;            
             }
 
-       
-
-
+      
 @media screen and (min-width: 431px) {
+    
+    
+    
+    
+    
     .divphone {
         display: flex;
         flex-direction: column;
@@ -610,12 +616,6 @@ body {
             max-width: 22em;
             top: 1418px;  
         }
-
-        .divnosotros {
-            margin-top: 100px;
-            
-        }
-
 }
 
 @media screen and (min-width: 650px) {
