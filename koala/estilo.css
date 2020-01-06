@@ -400,19 +400,10 @@ h1 {
     margin: 32px; } }
 /*---------------------------SECCION NOSOTROS--------------------------------------*/
 .section-nosotros {
+  display: flex;
+  flex-flow: column nowrap;
   margin-top: 24em;
-  margin-left: 16px;
-  margin-right: 16px;
-  /*width: 90%;*/ }
-
-.phonenosotros {
-  max-width: 19em;
-  position: absolute;
-  top: 1466px;
-  margin-left: -10px; }
-
-.artnosotros {
-  margin-top: 16px; }
+  width: 100%; }
 
 h2 {
   font-family: 'IBM Plex Sans';
@@ -421,18 +412,42 @@ h2 {
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
-  margin-bottom: 16px; }
+  margin-bottom: 8px;
+  width: 288px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 57px; }
+
+.divnosotros {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 288px;
+  margin-left: 16px;
+  margin-right: 16px; }
 
 p {
   font-family: 'IBM Plex Mono';
   font-size: 14px;
   color: #060A24;
   letter-spacing: 0;
-  line-height: 22px; }
+  line-height: 22px;
+  width: 97%; }
 
 .segundoP {
   margin-top: 16px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  width: 97%; }
+
+.divphone {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.phonenosotros {
+  max-width: 22em;
+  position: absolute;
+  top: 1466px;
+  height: 517px; }
 
 @media screen and (min-width: 431px) {
   .divphone {
@@ -444,7 +459,7 @@ p {
     max-width: 22em;
     top: 1418px; }
 
-  .artnosotros {
+  .divnosotros {
     margin-top: 100px; } }
 @media screen and (min-width: 650px) {
   .section-nosotros {
@@ -467,7 +482,7 @@ p {
     top: 981px;
     margin-left: -10px; }
 
-  .artnosotros {
+  .divnosotros {
     display: flex;
     flex: 1 1 58%;
     flex-direction: column;
@@ -492,7 +507,7 @@ p {
     max-width: 28.6em;
     top: 1405px; }
 
-  .artnosotros {
+  .divnosotros {
     align-items: center;
     width: 100%; }
 
@@ -590,7 +605,8 @@ p {
   font-weight: 600;
   margin: 0px;
   padding: 0px;
-  margin: 16px; }
+  margin: 0px;
+  width: 100%; }
 
 .divrepensando {
   font-family: 'IBM Plex Sans', 'SemiBold';
@@ -602,6 +618,9 @@ p {
   margin: 0px;
   padding: 0px;
   margin-top: 48px; }
+
+.topic-repensando {
+  width: 99%; }
 
 .divBases {
   font-family: 'IBM Plex Sans', 'SemiBold';

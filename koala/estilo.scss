@@ -554,38 +554,50 @@ body {
 /*---------------------------SECCION NOSOTROS--------------------------------------*/
         
     .section-nosotros {
+        display: flex;
+        flex-flow: column nowrap;
         margin-top: 24em;
-        margin-left: 16px;
-        margin-right: 16px;
-        /*width: 90%;*/     
+        width: 100%;     
     }
-
-        .phonenosotros {
-            max-width: 19em;
-            position: absolute;
-            top: 1466px;
-            margin-left: -10px;    
+        h2 {
+            @include titulos;
+            margin-bottom: 8px;
+            width: 288px;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-top: 57px;
         }
-
-        .artnosotros {
-           
-            margin-top: 16px;
-            
+        
+        .divnosotros {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 288px;
+            margin-left: 16px;
+            margin-right: 16px;
         }
-
-            h2 {
-                @include titulos;
-                margin-bottom: 16px;
-            }
-
             p {
                 @include parrafos;
+                width: 97%;
             }
 
             .segundoP {
                 margin-top: 16px;
                 margin-bottom: 0px;
+                width: 97%;
             }
+        .divphone {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+        }
+            .phonenosotros {
+                max-width: 22em;
+                position: absolute;
+                top: 1466px; 
+                height: 517px; 
+            }
+
+       
 
 
 @media screen and (min-width: 431px) {
@@ -599,7 +611,7 @@ body {
             top: 1418px;  
         }
 
-        .artnosotros {
+        .divnosotros {
             margin-top: 100px;
             
         }
@@ -631,7 +643,7 @@ body {
                 margin-left: -10px;   
             }
 
-        .artnosotros {
+            .divnosotros {
             display: flex;
             flex: 1 1 58%;
             flex-direction: column;
@@ -670,7 +682,7 @@ body {
                 
             }
         
-        .artnosotros {
+            .divnosotros {
             align-items: center;
             width: 100%;
         }
@@ -770,12 +782,16 @@ body {
             }
                 .ptopicos {
                     @include topicos;
-                    margin: 16px;
+                    margin: 0px;
+                    width: 100%;
                 }
             .divrepensando {
                 @include topicos;
                 margin-top: 48px;
             }
+                .topic-repensando {
+                    width: 99%;
+                }
 
             .divBases {
                 @include topicos;
@@ -786,6 +802,7 @@ body {
                 @include topicos;
                 margin-top: 48px;
             }
+                
 
 @media screen and (min-width: 650px) {
 
