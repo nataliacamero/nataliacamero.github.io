@@ -594,30 +594,43 @@ body {
                 
         }
             .phonenosotros {
-                max-width: 22.5em;
+                max-width: 19em;
                 position: absolute;
                 top: 1466px; 
-                height: 517px;            
+                           
             }
 
       
 @media screen and (min-width: 431px) {
        
+    .h2-nosotros {
+        margin-top:88px;
+    }
+
         .phonenosotros {
             top: 1418px;  
+            max-width: 21em;
+          
         }
 }
 
 @media screen and (min-width: 650px) {
 
     .section-nosotros {
-        margin-top: 27em;
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        flex: 1 1 50%;
+        
     }
-
+        .h2-nosotros {
+            margin-top: 1px;
+            margin-left: 0px;
+        }
         
         .divnosotros {
             display: flex;
-            flex: 1 1 58%;
+            flex: 1 1 50%;
             flex-direction: column;
             padding-right: 2em;
             
@@ -629,21 +642,20 @@ body {
             }
 
         .divphone {
-            flex: 1 1 52%;
+            flex: 1 1 50%;
             display: flex;
-            justify-content: flex-start;
+            flex-direction: row;
+            justify-content: center;
+            height: 484px;
         }
          
             .phonenosotros {
-                max-width: 22em;
+                max-width: 21em;
+                height: 500px; 
                 top: 981px;
-                margin-left: -10px;   
+                margin-left: 2em;
             }
-
-            
-
-
-            
+          
 }
 
 
@@ -711,8 +723,13 @@ body {
 
 @media screen and (min-width: 650px) {
     .section-entrevistas {
-        margin-top: 7em;
+        margin-top: 1em;
     }
+        .h3-entrevistas {
+            margin: 0px 16px 36px 16px;
+            font-size: 48px;
+        }
+
         .divEntrevistas {
             display: flex;
             flex-flow: row wrap;
